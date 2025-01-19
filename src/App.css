@@ -1,0 +1,152 @@
+body{
+  font-family:  Calibri, sans-serif;
+}
+h1{
+  text-align: center;
+  color: brown;
+}
+#weather-container {
+  background-color: #f2f2f2;  /* couleur de fond */
+  padding: 20px;             /* espacement intérieur */
+  border-radius: 8px;        /* coins arrondis */
+  border: 1px solid #ccc;    /* bordure */
+  margin: 20px;              /* marge extérieure */
+  font-family: 'Arial', sans-serif; /* police de caractères */
+  color: #333;               /* couleur du texte */
+}
+
+#weather-container p {
+  margin: 10px 0;            /* marge pour chaque paragraphe */
+}
+
+#weather-container h1 {
+  color: #007BFF;            /* couleur spécifique pour les titres */
+}
+
+.weather-result {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.weather-result button {
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.weather-result h2, .weather-result p {
+  margin: 5px 0;
+}
+.form{
+  padding: 20px;             /* Espacement à l'intérieur du conteneur */
+margin-top: 50px;          /* Espacement au-dessus du formulaire */
+background-color: #f7f7f7; /* Couleur de fond légère */
+box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre légère pour un effet de profondeur */
+border-radius: 8px;    
+  text-align: center;
+}
+.form input[type="text"] {
+padding: 10px 15px;        /* Espacement intérieur pour rendre le texte plus lisible */
+font-size: 16px;           /* Taille de la police pour l'accessibilité */
+border: 2px solid #ccc;    /* Bordure avec une couleur neutre */
+border-radius: 4px;        /* Coins légèrement arrondis */
+margin-right: 10px;        /* Espacement entre l'input et le bouton */
+flex-grow: 1;              /* Permet à l'input de prendre tout l'espace disponible */
+outline: none;             /* Supprime l'outline par défaut au focus */
+}
+
+.form input[type="text"]:focus {
+border-color: #0056b3;     /* Changement de couleur de bordure au focus */
+}
+
+/* Style pour le bouton */
+.form button {
+padding: 10px 20px;        /* Espacement intérieur pour un clic facile */
+font-size: 16px;           /* Taille de la police cohérente avec l'input */
+color: white;              /* Texte en blanc */
+background-color: #007bff; /* Couleur de fond bleue */
+border: none;              /* Aucune bordure */
+border-radius: 4px;        /* Coins arrondis */
+cursor: pointer;           /* Indique que le bouton est cliquable */
+outline: none;             /* Supprime l'outline par défaut au focus */
+}
+
+.form button:hover {
+background-color: #0056b3; /* Couleur plus foncée au survol pour un feedback visuel */
+}
+/* Styles pour les écrans dont la largeur est inférieure ou égale à 768px (tablettes et mobiles) */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Ajuster la taille de la police pour les écrans plus petits */
+  }
+
+  .App {
+    padding: 10px; /* Réduire les marges et les espacements pour mobile */
+  }
+
+  .weather-result {
+    flex-direction: column; /* Les résultats météo s'empilent verticalement */
+    align-items: flex-start; /* Aligner les éléments sur la gauche */
+  }
+
+  .weather-info {
+    max-width: 100%; /* Laisser plus de place pour le contenu */
+  }
+
+  h2 {
+    font-size: 1.1rem; /* Réduire la taille des titres sur mobile */
+  }
+
+  p {
+    font-size: 0.9rem; /* Réduire légèrement la taille du texte pour mobile */
+  }
+
+  button {
+    align-self: center; /* Centrer le bouton de suppression sur mobile */
+    width: 100%; /* Ajuster la taille du bouton pour prendre toute la largeur */
+  }
+}
+
+/* Styles pour les petits écrans, en dessous de 480px (petits smartphones) */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px; /* Réduire la taille de la police pour les très petits écrans */
+  }
+h1{
+  font-size: 1.5em;
+}
+.form {
+  margin: 0;
+}
+.form button {
+  font-size: 0.90em;
+  padding: 5px;
+  width: 8em;
+  margin: 5px;
+}
+input {
+  text-align: center;
+}
+  h2 {
+    font-size: 1rem; /* Encore plus petit pour les petits smartphones */
+  }
+
+  p {
+    font-size: 0.8rem; /* Ajuster encore la taille des paragraphes */
+  }
+
+  .App {
+    padding: 5px; /* Réduire encore les marges pour les très petits écrans */
+  }
+}

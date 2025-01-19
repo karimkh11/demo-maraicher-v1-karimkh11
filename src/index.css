@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Styles pour les écrans dont la largeur est inférieure ou égale à 768px (tablettes et mobiles) */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px; /* Ajuster la taille de la police pour les écrans plus petits */
+  }
+
+  .App {
+    padding: 10px; /* Réduire les marges et les espacements pour mobile */
+  }
+
+  .weather-result {
+    flex-direction: column; /* Les résultats météo s'empilent verticalement */
+    align-items: flex-start; /* Aligner les éléments sur la gauche */
+  }
+
+  .weather-info {
+    max-width: 100%; /* Laisser plus de place pour le contenu */
+  }
+
+  h2 {
+    font-size: 1.1rem; /* Réduire la taille des titres sur mobile */
+  }
+
+  p {
+    font-size: 0.9rem; /* Réduire légèrement la taille du texte pour mobile */
+  }
+
+  button {
+    align-self: center; /* Centrer le bouton de suppression sur mobile */
+    width: 100%; /* Ajuster la taille du bouton pour prendre toute la largeur */
+  }
+}
+
+/* Styles pour les petits écrans, en dessous de 480px (petits smartphones) */
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px; /* Réduire la taille de la police pour les très petits écrans */
+  }
+
+  h2 {
+    font-size: 1rem; /* Encore plus petit pour les petits smartphones */
+  }
+
+  p {
+    font-size: 0.8rem; /* Ajuster encore la taille des paragraphes */
+  }
+
+  .App {
+    padding: 5px; /* Réduire encore les marges pour les très petits écrans */
+  }
+}
